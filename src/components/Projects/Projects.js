@@ -11,8 +11,8 @@ export default function Projects() {
                     <img className='image' src={Tipsy} alt='Tipsy'/>
                 </div>
                 <h3 className='projects__item__title'>Tipsy</h3>
-                <a href='https://github.com' className='btn' target='_blank'>Github</a>
-                <a href='' className='btn' target='_blank'>View website</a>
+                <a href='https://github.com' className='btn projects__btn' target='_blank'>Github</a>
+                <a href='' className='btn projects__btn' target='_blank'>Website</a>
             </div>
         </div>
     </section>
