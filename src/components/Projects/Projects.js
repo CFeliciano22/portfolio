@@ -1,17 +1,21 @@
 import './Projects.scss'
+import Tipsy from '../../assets/images/Tipsy.png'
  
 export default function Projects() {
   return (
-    <div className="projects">
-        <h1 className='projects__title'>Projects</h1>
+    <section className="projects">
+        <h2 className='projects__title'>Projects</h2>
         <div className='projects__container'>
             <div className='projects__item'>
-                <img/>
-                <h2>Project 1</h2>
-                <p>project description goes here</p>
+                <div className='project__item-image'>
+                    <img className='image' src={Tipsy} alt='Tipsy'/>
+                </div>
+                <h3 className='projects__item__title'>Tipsy</h3>
+                <a href='https://github.com' className='btn' target='_blank'>Github</a>
+                <a href='' className='btn' target='_blank'>View website</a>
             </div>
         </div>
-    </div>
+    </section>
     )
 }
 
