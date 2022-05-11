@@ -1,0 +1,98 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.homepage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-top: 5rem;
+}
+.btn{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #1a87cf;
+}
+.homepage__image{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 70%;
+    border: 1px solid lightgrey;
+}
+.homepage__image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    padding-top: 1rem;
+}
+
+@keyframes float{
+    0%{
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(-20px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+
+.homepage__header{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+    width: 20rem;
+    text-align: center;
+}
+
+.homepage__para{
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    color: lightgrey;
+    padding: 10px 10px 0px;  
+}
+
+.homepage__links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+@include tablet{
+    .homepage-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3rem;
+    }
+    .homepage__image{
+        border-radius: 70%;
+        margin-left: 3rem;
+    }
+    .homepage{
+        padding-top: 0;
+    }
+}
+
+@include desktop{
+    .homepage{
+        width: 100%;
+    }
+    .homepage__image-container{
+        width: 100%;
+    }
+    .homepage__image{
+        margin-left: 0;
+    }
+}
