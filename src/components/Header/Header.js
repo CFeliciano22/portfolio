@@ -3,6 +3,7 @@ import {  NavLink, Link } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
 import navItems from '../navItems'
 import { Component } from 'react'
+import Cesar from '../../assets/images/cez.jpeg'
 
 
 
