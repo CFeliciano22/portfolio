@@ -1,3 +1,5 @@
+@use '../../styles/partials/mixins' as *;
+
 #projects{
     color: white;
     display: flex;
@@ -11,11 +13,19 @@
     height: 100%;
 }
 
+@include tablet{
+.projects__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+}
 .projects__item{
   background-color: rgb(98, 106, 141);
   padding: 2rem;
   border-radius: 2rem;
   margin-bottom: 1.5rem;
+//   max-width: 400px;
 }
 
 .projects__item__title{

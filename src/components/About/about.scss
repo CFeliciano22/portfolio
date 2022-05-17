@@ -1,9 +1,32 @@
+@use '../../styles/partials/mixins' as *;
+
 #about{
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.about__container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@include tablet{
+    .about__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .about__image{
+        width: 50%;
+    }
+    .about__bio{
+        width: 50%;
+    }
 }
 .about__image{
     width: 15rem;
@@ -18,5 +41,19 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 2rem;
-   
+}
+
+.about__bio{
+    background-color: #626a8d;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.about__hobbies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    font-size: 1.3rem;
 }

@@ -4,7 +4,7 @@ import me from '../../assets/images/memoji2.jpg'
 export default function Homepage() {
     return (
         <>
-            <section className="homepage-container">
+            <section id='home'>
             <div className='homepage'>
             <h1 className='homepage__header'>Hi, im Cesar Feliciano</h1>
             <p className='homepage__para'>Full-Stack Web Developer</p>
