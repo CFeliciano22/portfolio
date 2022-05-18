@@ -4,7 +4,6 @@
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: rgba(0,0,0,0.4);
-    z-index: 1;
 }
 
 .nav{
@@ -20,13 +19,31 @@ body{
 }
 
 .nav__header{
-    color: #fff;
+    color: #0e3742;
+    text-transform: uppercase;
     justify-self: start;
     margin-left: 1.25rem;
     font-size: 1.5rem;
     cursor: pointer;
     width: 100%;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    animation: glow 5s linear infinite ;
+    outline: none;
 }
+@keyframes glow{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #0e3742;
+        box-shadow: none;
+    }
+    18.1%,20.1%, 30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+    }
 
 .nav__icon{
     color: #fff;

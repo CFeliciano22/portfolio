@@ -28,7 +28,7 @@ export default function Projects() {
                 </div>
                     <h3 className='projects__item__title'>{item.title}</h3>
                     <a href={item.github} className='btn projects__btn' target='_blank'>Github</a>
-                    <a href={item.website} className='btn projects__btn' target='_blank'>Website</a>
+                    <a href={item.website} className='btn projects__btn' target='_blank'>Demo</a>
             </div>)} )}
         </div>
     </section>

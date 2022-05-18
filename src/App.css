@@ -2,7 +2,7 @@
 
 html{
     scroll-behavior: smooth;
-   
+    cursor: url(/src/assets/images/rocketship.png),auto;
 }
 body{
     background-image: url(./assets/images/background5.webp);
