@@ -2,7 +2,9 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/variables' as *;
 body{
-    font-family: Titillium;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
 }
 
 .nav{

@@ -7,6 +7,11 @@
     justify-content: center;
     align-items: center;
 }
+@include tablet{
+    #about{
+        height: 85vh;
+    }
+}
 .about__container{
     color: white;
     display: flex;
