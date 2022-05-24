@@ -23,12 +23,11 @@ export default function Contact() {
                 <input type='name' name='name' placeholder='Your Full Name' required/>
                 <input type='email' name='email' placeholder='Your Email' required/>
                 <textarea name='message' placeholder='Your Message' rows='7' required></textarea>
-                <button className='btn' type='submit'>Send Message</button>
+                <button className='button' type='submit'>Send Message</button>
             </form>
             <div className='contact__info'>
-                <p>Github: <a href=''></a></p>
-                <p>LinkedIn: <a href=''></a></p>
-                <p>Email: <a href=''></a></p>
+                <a className='button links' href='https://github.com/cfeliciano22'>Github</a>
+                <a className='button links' href='https://linkedin.com/in/cesar-a-feliciano'>LinkedIn</a>
             </div>
         </section>
     )

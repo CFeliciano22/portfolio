@@ -26,3 +26,13 @@ input, textarea{
    max-width: 600px;
    margin: 0 auto;
 }
+
+.links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact__info{
+   padding: 2rem 0;
+}

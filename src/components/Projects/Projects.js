@@ -1,18 +1,13 @@
 import './Projects.scss'
-import Tipsy from '../../assets/images/Tipsy.png'
 import ProjectItems from './ProjectItems'
-
-// import Swiper core and required modules
-import { Pagination } from 'swiper';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
+import { Modal } from 'react-bootstrap'
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function Projects() {
+
+
+
   return (
     <section id="projects">
     <h3 className='projects__title'>Projects</h3>
@@ -27,8 +22,13 @@ export default function Projects() {
                     </div>
                 </div>
                     <h3 className='projects__item__title'>{item.title}</h3>
-                    <a href={item.github} className='btn projects__btn' target='_blank'>Github</a>
-                    <a href={item.website} className='btn projects__btn' target='_blank'>Demo</a>
+                    <a href={item.github} className='button projects__btn' target='_blank'>Github</a>
+                    <a   className='button projects__btn' >Demo</a>
+                    <Modal show={false} >
+                        <Modal.Header>{item.title}</Modal.Header>
+                        <Modal.Body></Modal.Body>
+                        <Modal.Footer><button >Close</button></Modal.Footer>
+                    </Modal>
             </div>)} )}
         </div>
     </section>

@@ -1,5 +1,3 @@
-import Tipsy from '../../assets/images/Tipsy.png'
-
 
 const ProjectItems =[
     {
