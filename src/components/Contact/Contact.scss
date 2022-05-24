@@ -29,10 +29,14 @@ input, textarea{
 
 .links{
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact__info{
    padding: 2rem 0;
+}
+.contact__icon{
+    height: 2rem;
+    padding-right: 1rem;
 }
