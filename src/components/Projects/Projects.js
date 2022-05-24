@@ -1,6 +1,6 @@
 import './Projects.scss'
 import ProjectItems from './ProjectItems'
-import { Modal } from 'react-bootstrap'
+// import { Modal } from 'react-bootstrap'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -23,12 +23,12 @@ export default function Projects() {
                 </div>
                     <h3 className='projects__item__title'>{item.title}</h3>
                     <a href={item.github} className='button projects__btn' target='_blank'>Github</a>
-                    <a   className='button projects__btn' >Demo</a>
+                    {/* <a   className='button projects__btn' >Demo</a>
                     <Modal show={false} >
                         <Modal.Header>{item.title}</Modal.Header>
                         <Modal.Body></Modal.Body>
                         <Modal.Footer><button >Close</button></Modal.Footer>
-                    </Modal>
+                    </Modal> */}
             </div>)} )}
         </div>
     </section>
