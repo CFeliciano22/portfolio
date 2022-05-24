@@ -26,8 +26,8 @@ export default function Contact() {
                 <button className='button' type='submit'>Send Message</button>
             </form>
             <div className='contact__info'>
-                <a className='button links' href='https://github.com/cfeliciano22'>Github</a>
-                <a className='button links' href='https://linkedin.com/in/cesar-a-feliciano'>LinkedIn</a>
+                <a className='button links' href='https://github.com/cfeliciano22' target='_blank'>Github</a>
+                <a className='button links' href='https://linkedin.com/in/cesar-a-feliciano' target='_blank'>LinkedIn</a>
             </div>
         </section>
     )
